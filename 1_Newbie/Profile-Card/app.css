@@ -4,7 +4,6 @@ body {
   background: url(./images/bg-pattern-bottom.svg);
   background-color: hsl(185, 75%, 39%);
   font-family: 'Kumbh Sans', sans-serif;
-  transform: rotate(50%);
 }
 .profile-card {
   width: 400px;
@@ -30,10 +29,12 @@ body {
 
 .profile-card__picture {
   border-radius: 50%;
-  border: 3px solid white;
+  border: 5px solid white;
   position: absolute;
-  top: 90px;
-  left: 38%;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
 }
 
 .profile-card__info {
