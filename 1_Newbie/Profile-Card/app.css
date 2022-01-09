@@ -11,9 +11,10 @@ body {
   height: 400px;
   border-radius: 3%;
   background-color: white;
-  position: relative;
-  /* Prevents image from overflowing outside container */
-  overflow: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .profile-card__pattern--top {
