@@ -35,8 +35,13 @@ body {
   font-weight: 400;
   color: hsl(0, 0%, 59%);
 }
+
 .profile-card__name {
   font-size: 18px;
   font-weight: 900;
   color: black;
+}
+
+.profile-card__divider {
+  border: 0.1px solid rgb(245, 245, 245);
 }
