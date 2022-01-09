@@ -45,3 +45,20 @@ body {
 .profile-card__divider {
   border: 0.1px solid rgb(245, 245, 245);
 }
+
+.profile-card__stats {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 50px;
+}
+
+.profile-card__stats--number {
+  color: black;
+  text-transform: uppercase;
+  padding-top: 0;
+  margin: 30px 0 0;
+}
+
+.profile-card__stats--attribute {
+  font-size: 12px;
+}
