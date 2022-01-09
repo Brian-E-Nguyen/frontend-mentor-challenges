@@ -12,12 +12,16 @@ body {
   border-radius: 3%;
   background-color: white;
   position: relative;
+  /* Prevents image from overflowing outside container */
+  overflow: auto;
 }
 
 .profile-card__pattern--top {
   background: url(./images/bg-pattern-card.svg);
   width: 100%;
   height: 120px;
+  position: relative;
+  object-fit: cover;
 }
 
 .profile-card__picture {
@@ -50,13 +54,13 @@ body {
   display: grid;
   grid-template-columns: auto auto auto;
   column-gap: 50px;
+  margin: 10px 20px;
 }
 
 .profile-card__stats--number {
   color: black;
   text-transform: uppercase;
   padding-top: 0;
-  margin: 30px 0 0;
 }
 
 .profile-card__stats--attribute {
