@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
 body {
   background: url(./images/bg-pattern-bottom.svg);
   background-color: hsl(185, 75%, 39%);
+  font-family: 'Kumbh Sans', sans-serif;
 }
-
 .profile-card {
   /* TODO: shadows */
   width: 400px;
@@ -24,4 +26,17 @@ body {
   position: absolute;
   top: 70px;
   left: 38%;
+}
+
+.profile-card__info {
+  top: 15%;
+  position: relative;
+  text-align: center;
+  font-weight: 400;
+  color: hsl(0, 0%, 59%);
+}
+.profile-card__name {
+  font-size: 18px;
+  font-weight: 900;
+  color: black;
 }
