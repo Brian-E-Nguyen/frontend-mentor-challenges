@@ -74,6 +74,7 @@ body {
   border-style: none;
   overflow: auto;
   transition: 0.3s;
+  border-radius: 10%;
 }
 
 .challenge-card__button--image {
