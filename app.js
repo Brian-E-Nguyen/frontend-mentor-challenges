@@ -6,6 +6,20 @@ const cardData = [
     githubSrc:
       'https://github.com/Brian-E-Nguyen/frontend-mentor-challenges/tree/master/Profile-Card',
   },
+  {
+    title: 'Profile Card',
+    image: './Profile-Card/design/desktop-design.jpg',
+    siteSrc: './Profile-Card/index.html',
+    githubSrc:
+      'https://github.com/Brian-E-Nguyen/frontend-mentor-challenges/tree/master/Profile-Card',
+  },
+  {
+    title: 'Profile Card',
+    image: './Profile-Card/design/desktop-design.jpg',
+    siteSrc: './Profile-Card/index.html',
+    githubSrc:
+      'https://github.com/Brian-E-Nguyen/frontend-mentor-challenges/tree/master/Profile-Card',
+  },
 ];
 
 cardData.forEach((data) => {

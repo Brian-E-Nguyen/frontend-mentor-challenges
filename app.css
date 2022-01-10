@@ -15,6 +15,9 @@ body {
 
 .container {
   margin: 0 50px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
 }
 #footer {
   position: fixed;
@@ -38,6 +41,8 @@ body {
   overflow: auto;
   box-shadow: 0px 0px 5px 0px;
   transition: 0.3s;
+  display: inline-block;
+  margin: 0 20px;
 }
 .challenge-card:hover {
   box-shadow: 0px 0px 10px 0px;
