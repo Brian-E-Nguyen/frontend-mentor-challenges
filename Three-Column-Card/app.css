@@ -9,7 +9,7 @@ button {
   padding: 13px 25px;
   border-radius: 20px;
   position: absolute;
-  bottom: 20px;
+  bottom: 40px;
 }
 .button-1 {
   color: hsl(31, 77%, 52%);
@@ -24,8 +24,8 @@ button {
 }
 
 .card {
-  width: 600px;
-  height: 400px;
+  width: 700px;
+  height: 450px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -40,7 +40,6 @@ button {
 .card__section {
   padding: 20px 30px;
   max-width: 200px;
-  max-height: 400px;
 }
 
 .card__section--title {
