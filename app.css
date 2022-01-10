@@ -72,17 +72,37 @@ body {
   width: 50px;
   height: 50px;
   border-style: none;
-  margin-right: 20px;
   overflow: auto;
+  transition: 0.3s;
 }
+
 .challenge-card__button--image {
   width: 40px;
   margin: 0;
   padding: 0;
 }
+
 .challenge-card__button--example {
-  background-color: #4fc3f7;
+  background-color: #50c8ff;
+  cursor: pointer;
 }
+
 .challenge-card__button--github {
   background-color: #c7c7c7;
+  cursor: pointer;
+}
+
+.challenge-card__button--example:hover {
+  background-color: #398eb6;
+}
+
+.challenge-card__button--github:hover {
+  background-color: #7c7c7c;
+}
+
+a.challenge-card__link {
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  margin-right: 10px;
 }
