@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
 html {
   background-color: rgb(252, 237, 207);
 }
@@ -14,6 +15,18 @@ html {
   grid-template-columns: auto auto auto;
   overflow: auto;
   color: white;
+}
+
+.card__section {
+  padding: 20px 30px;
+}
+
+.card__section--title {
+  text-transform: uppercase;
+  font-family: 'Big Shoulders Display', cursive;
+}
+.card__section--description {
+  font-family: 'Lexend Deca', sans-serif;
 }
 
 .card__section--1 {
