@@ -31,7 +31,7 @@ body {
 .challenge-card {
   border-radius: 3%;
   width: 400px;
-  height: 400px;
+  height: 420px;
   overflow: auto;
   box-shadow: 0px 0px 5px 0px;
   transition: 0.3s;
@@ -65,4 +65,11 @@ body {
 
 .challenge-card__language--css {
   color: rgb(62, 84, 163);
+}
+
+.challenge-card__button {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
 }
