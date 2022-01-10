@@ -71,5 +71,18 @@ body {
   display: inline-block;
   width: 50px;
   height: 50px;
+  border-style: none;
   margin-right: 20px;
+  overflow: auto;
+}
+.challenge-card__button--image {
+  width: 40px;
+  margin: 0;
+  padding: 0;
+}
+.challenge-card__button--example {
+  background-color: #4fc3f7;
+}
+.challenge-card__button--github {
+  background-color: #c7c7c7;
 }
