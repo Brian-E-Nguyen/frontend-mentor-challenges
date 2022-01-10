@@ -31,7 +31,7 @@ body {
 .challenge-card {
   border-radius: 3%;
   width: 400px;
-  height: 500px;
+  height: 400px;
   overflow: auto;
   box-shadow: 0px 0px 10px 0px;
 }
@@ -39,4 +39,22 @@ body {
 .challenge-card__banner {
   background: url('https://images.unsplash.com/photo-1495616811223-4d98c6e9c869?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80');
   height: 250px;
+}
+
+.challenge-card__title {
+  font-size: 1.5rem;
+}
+
+.challenge-card__language--html,
+.challenge-card__language--css {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.challenge-card__language--html {
+  color: rgb(106, 190, 205);
+}
+
+.challenge-card__language--css {
+  color: rgb(62, 84, 163);
 }
