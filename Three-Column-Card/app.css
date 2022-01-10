@@ -9,6 +9,18 @@ button {
   padding: 13px 25px;
   border-radius: 20px;
 }
+.button-1 {
+  color: hsl(31, 77%, 52%);
+}
+
+.button-2 {
+  color: hsl(184, 100%, 22%);
+}
+
+.button-3 {
+  color: hsl(179, 100%, 13%);
+}
+
 .card {
   width: 600px;
   height: 400px;
