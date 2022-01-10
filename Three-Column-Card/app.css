@@ -8,6 +8,8 @@ button {
   font-family: 'Lexend Deca', sans-serif;
   padding: 13px 25px;
   border-radius: 20px;
+  position: absolute;
+  bottom: 20px;
 }
 .button-1 {
   color: hsl(31, 77%, 52%);
@@ -38,6 +40,7 @@ button {
 .card__section {
   padding: 20px 30px;
   max-width: 200px;
+  max-height: 400px;
 }
 
 .card__section--title {
