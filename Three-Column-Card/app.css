@@ -4,13 +4,22 @@ html {
 }
 button {
   background-color: white;
-  border: none;
+  border: 2px solid;
   font-family: 'Lexend Deca', sans-serif;
   padding: 13px 25px;
   border-radius: 20px;
   position: absolute;
   bottom: 40px;
+  transition: 0.3s;
 }
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border-color: white;
+  transition: 0.3s;
+}
+
 .button-1 {
   color: hsl(31, 77%, 52%);
 }
