@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@200;400&display=swap');
+html {
+  background-color: rgb(252, 237, 207);
+}
+
+button {
+  background-color: white;
+  border: 2px solid;
+  font-family: 'Lexend Deca', sans-serif;
+  padding: 13px 25px;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 40px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border-color: white;
+  transition: 0.3s;
+}
+
+.button-1 {
+  color: hsl(31, 77%, 52%);
+}
+
+.button-2 {
+  color: hsl(184, 100%, 22%);
+}
+
+.button-3 {
+  color: hsl(179, 100%, 13%);
+}
+
+.card {
+  width: 750px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: auto auto auto;
+  overflow: auto;
+  color: white;
+}
+
+.card__section {
+  padding: 20px 30px;
+  max-width: 200px;
+}
+
+.card__section--title {
+  text-transform: uppercase;
+  font-family: 'Big Shoulders Display', cursive;
+}
+.card__section--description {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  font-weight: 100;
+  margin: 0;
+}
+
+.card__section--1 {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.card__section--2 {
+  background-color: hsl(184, 100%, 22%);
+}
+.card__section--3 {
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  .card {
+    grid-template-columns: auto;
+    height: 1000px;
+    justify-content: center;
+    margin-top: 200px;
+  }
+  .card__section--1 {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+  }
+  .card__section--3 {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  button {
+    position: relative;
+    bottom: 0px;
+  }
+}
