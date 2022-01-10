@@ -8,25 +8,18 @@ const cardData = [
   },
 ];
 
-// cardData.map((data, i) => {
-//   var card = document.createElement('div');
-//   card.innerHTML = (
-//     <div class='challenge-card'>
-//       <img
-//         src='./Profile-Card/design/desktop-design.jpg'
-//         class='challenge-card__banner'
-//       />
-//     </div>
-//   );
-//   document.getElementsByClassName('container')[0].appendChild(card);
-//   console.log(i);
-// });
-
 cardData.forEach((data) => {
   var card = document.createElement('div');
   card.innerHTML =
     `<div class='challenge-card'>` +
     `<img  src='${data.image}' class='challenge-card__banner'/>` +
+    `<div class="challenge-card__container">` +
+    `<h1 class="challenge-card__title">${data.title}</h1>` +
+    ` <p>
+        <span class="challenge-card__language--html">HTML</span>
+        <span class="challenge-card__language--css">CSS</span>
+      </p>` +
+    `</div>` +
     `</div>`;
   document.getElementsByClassName('container')[0].appendChild(card);
 });
