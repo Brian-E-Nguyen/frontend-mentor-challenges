@@ -1,11 +1,10 @@
 html {
-  background-color: rgb(255, 255, 238);
+  background-color: rgb(252, 237, 207);
 }
 
 .card {
   width: 700px;
   height: 400px;
-  border: 1px solid black;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -13,4 +12,16 @@ html {
   border-radius: 2%;
   display: grid;
   grid-template-columns: auto auto auto;
+  overflow: auto;
+  color: white;
+}
+
+.card__section--1 {
+  background-color: hsl(31, 77%, 52%);
+}
+.card__section--2 {
+  background-color: hsl(184, 100%, 22%);
+}
+.card__section--3 {
+  background-color: hsl(179, 100%, 13%);
 }
