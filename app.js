@@ -6,6 +6,13 @@ const cardData = [
     githubSrc:
       'https://github.com/Brian-E-Nguyen/frontend-mentor-challenges/tree/master/Profile-Card',
   },
+  {
+    title: 'Three Column Card',
+    image: './Three-Column-Card/design/desktop-design.jpg',
+    siteSrc: './Three-Column-Card/index.html',
+    githubSrc:
+      'https://github.com/Brian-E-Nguyen/frontend-mentor-challenges/tree/master/Three-Column-Card',
+  },
 ];
 
 cardData.forEach((data) => {
