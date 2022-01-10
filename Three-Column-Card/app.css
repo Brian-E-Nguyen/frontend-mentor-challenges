@@ -4,7 +4,7 @@ html {
 }
 
 .card {
-  width: 700px;
+  width: 600px;
   height: 400px;
   position: absolute;
   top: 50%;
@@ -19,6 +19,7 @@ html {
 
 .card__section {
   padding: 20px 30px;
+  max-width: 200px;
 }
 
 .card__section--title {
@@ -27,6 +28,9 @@ html {
 }
 .card__section--description {
   font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  font-weight: 100;
+  margin: 0;
 }
 
 .card__section--1 {
