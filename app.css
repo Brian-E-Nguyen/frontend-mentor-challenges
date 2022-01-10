@@ -27,3 +27,83 @@ body {
 #footer a {
   color: #64b5f6;
 }
+
+.challenge-card {
+  border-radius: 3%;
+  width: 400px;
+  height: 420px;
+  overflow: auto;
+  box-shadow: 0px 0px 5px 0px;
+  transition: 0.3s;
+}
+.challenge-card:hover {
+  box-shadow: 0px 0px 10px 0px;
+  transition: 0.3s;
+}
+.challenge-card__container {
+  margin: 0 20px;
+}
+
+.challenge-card__banner {
+  background: url('https://images.unsplash.com/photo-1495616811223-4d98c6e9c869?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80');
+  height: 250px;
+}
+
+.challenge-card__title {
+  font-size: 1.5rem;
+}
+
+.challenge-card__language--html,
+.challenge-card__language--css {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.challenge-card__language--html {
+  color: rgb(106, 190, 205);
+}
+
+.challenge-card__language--css {
+  color: rgb(62, 84, 163);
+}
+
+.challenge-card__button {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  overflow: auto;
+  transition: 0.3s;
+  border-radius: 10%;
+}
+
+.challenge-card__button--image {
+  width: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.challenge-card__button--example {
+  background-color: #50c8ff;
+  cursor: pointer;
+}
+
+.challenge-card__button--github {
+  background-color: #c7c7c7;
+  cursor: pointer;
+}
+
+.challenge-card__button--example:hover {
+  background-color: #398eb6;
+}
+
+.challenge-card__button--github:hover {
+  background-color: #7c7c7c;
+}
+
+a.challenge-card__link {
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  margin-right: 10px;
+}
