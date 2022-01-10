@@ -15,6 +15,9 @@ body {
 
 .container {
   margin: 0 50px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
 }
 #footer {
   position: fixed;
@@ -22,9 +25,10 @@ body {
   margin: 0;
   width: 100%;
   background-color: #546e7a;
-  padding: 20px;
+  padding: 20px 0;
   color: white;
   text-align: center;
+  font-size: 1.6rem;
 }
 
 #footer a {
@@ -38,6 +42,8 @@ body {
   overflow: auto;
   box-shadow: 0px 0px 5px 0px;
   transition: 0.3s;
+  display: inline-block;
+  margin: 40px 20px;
 }
 .challenge-card:hover {
   box-shadow: 0px 0px 10px 0px;
@@ -110,4 +116,21 @@ a.challenge-card__link {
   position: relative;
   width: 50px;
   margin-right: 10px;
+}
+
+@media (max-width: 1300px) {
+  .container {
+    grid-template-columns: auto auto;
+  }
+}
+@media (max-width: 860px) {
+  #footer {
+    font-size: 1rem;
+  }
+  .container {
+    grid-template-columns: auto;
+  }
+  .challenge-card {
+    width: 300px;
+  }
 }
