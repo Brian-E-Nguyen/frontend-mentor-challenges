@@ -39,6 +39,12 @@ html {
   margin: 2rem 100px;
 }
 
+.social-buttons {
+  position: absolute;
+  bottom: 50px;
+  right: 100px;
+}
+
 .social-button {
   width: 35px;
   height: 35px;
@@ -47,6 +53,7 @@ html {
   border: 1px solid white;
   transition: border-color 0.3s, color 0.3s;
   color: white;
+  margin: 0 8px;
 }
 
 .social-button:hover {
