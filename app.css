@@ -130,6 +130,8 @@ a.challenge-card__link {
   .container {
     grid-template-columns: auto;
   }
+}
+@media (max-width: 480px) {
   .challenge-card {
     width: 300px;
   }
