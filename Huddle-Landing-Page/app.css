@@ -114,3 +114,14 @@ html {
     transform: translateX(-50%);
   }
 }
+
+@media (max-width: 460px) {
+  .intro__image {
+    width: 270px;
+  }
+  .social-buttons {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 200%);
+  }
+}
