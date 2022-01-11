@@ -45,9 +45,13 @@ html {
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid white;
-}
-.social-button__image {
+  transition: border-color 0.3s, color 0.3s;
   color: white;
+}
+
+.social-button:hover {
+  border-color: hsl(300, 69%, 71%);
+  color: hsl(300, 69%, 71%);
 }
 
 .container-grid {
