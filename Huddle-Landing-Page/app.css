@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+html {
+  background: url(./images/bg-desktop.svg);
+  background-color: hsl(257, 40%, 49%);
+  color: white;
+}
+
+.intro__title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.intro__description {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+}
