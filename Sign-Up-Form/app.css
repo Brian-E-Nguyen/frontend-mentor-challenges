@@ -3,6 +3,12 @@ html {
   background-color: hsl(0, 100%, 74%);
 }
 
+input {
+  width: 100%;
+  padding: 10px 5px;
+  box-sizing: border-box;
+}
+
 .signup-form {
   background-color: white;
   width: 400px;
@@ -13,4 +19,6 @@ html {
 
 .signup-form__container {
   padding: 25px;
+  display: grid;
+  gap: 2rem;
 }
