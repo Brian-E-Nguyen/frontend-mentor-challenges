@@ -15,7 +15,17 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 
+.intro__button {
+  color: hsl(257, 40%, 49%);
+  background-color: white;
+  border: none;
+  padding: 15px 50px;
+  border-radius: 20px;
+}
+
 .container-grid {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 3fr;
+  gap: 1.5rem;
+  margin: 2rem 100px;
 }
