@@ -58,6 +58,7 @@ html {
 .social-button:hover {
   border-color: hsl(300, 69%, 71%);
   color: hsl(300, 69%, 71%);
+  cursor: pointer;
 }
 
 .container-grid {
@@ -91,6 +92,7 @@ html {
     background: url(./images/bg-mobile.svg);
     background-color: hsl(257, 40%, 49%);
     object-fit: contain;
+    background-repeat: no-repeat;
   }
   .intro__image {
     width: 400px;
