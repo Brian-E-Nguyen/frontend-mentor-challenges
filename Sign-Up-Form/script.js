@@ -15,8 +15,19 @@ const validateForm = (event) => {
   };
 
   checkInputLength(formData);
+  validateEmail(formData.email);
 };
 form.addEventListener('submit', validateForm);
+
+const validateEmail = (email) => {
+  const mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if (!email.match(mailFormat)) {
+    var errorFirstNameElement = document.getElementsByClassName(
+      'signup-form__error email'
+    )[0];
+    errorFirstNameElement.classList.add('active');
+  }
+};
 
 const checkInputLength = (data) => {
   if (!data.firstName.length) {
