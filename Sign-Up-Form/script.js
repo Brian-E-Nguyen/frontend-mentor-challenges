@@ -15,6 +15,7 @@ const validateForm = (event) => {
   };
   validateFirstName(formData.firstName);
   validateLastName(formData.lastName);
+  validateEmail(formData.email);
 };
 form.addEventListener('submit', validateForm);
 
@@ -50,58 +51,22 @@ const validateLastName = (name) => {
 
 const validateEmail = (email) => {
   const mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-  if (email.match(mailFormat)) {
-    let errorEmailElement = document.getElementById('email-error');
-    errorEmailElement.classList.add('active');
+  let emailInput = document.getElementById('email');
+  let errorEmailElement = document.getElementById('email-error');
 
-    let emailInput = document.getElementById('email');
-    emailInput.classList.add('input-error');
-    errorEmailElement.innerText = 'Looks like this is not an email';
-  }
-};
-
-const checkInputLength = (data) => {
-  let isValidData = true;
-  if (!data.firstName.length) {
-    let errorFirstNameElement = document.getElementById('first-name-error');
-    errorFirstNameElement.classList.add('active');
-    errorFirstNameElement.innerText = 'First Name cannot be empty';
-
-    let firstNameInput = document.getElementById('firstName');
-    firstNameInput.classList.add('input-error');
-
-    isValidData = false;
-  }
-  if (!data.lastName.length) {
-    let errorLastNameElement = document.getElementById('last-name-error');
-    errorLastNameElement.classList.add('active');
-    errorLastNameElement.innerText = 'Last Name cannot be empty';
-
-    let lastNameInput = document.getElementById('lastName');
-    lastNameInput.classList.add('input-error');
-
-    isValidData = false;
-  }
-  if (!data.email.length) {
-    let errorEmailElement = document.getElementById('email-error');
-    errorEmailElement.classList.add('active');
-    errorEmailElement.innerText = 'Email cannot be empty';
-
-    let emailInput = document.getElementById('email');
-    emailInput.classList.add('input-error');
-    isValidData = false;
+  if (email.length) {
+    if (email.match(mailFormat)) {
+      errorEmailElement.classList.remove('active');
+      emailInput.classList.remove('input-error');
+      errorEmailElement.innerText = '';
+    } else {
+      errorEmailElement.classList.add('active');
+      emailInput.classList.add('input-error');
+      errorEmailElement.innerText = 'Looks like this is not an email';
+    }
   } else {
-    const isValidEmail = validateEmail(data.email);
-    if (!isValidEmail) isValidData = false;
+    errorEmailElement.classList.add('active');
+    emailInput.classList.add('input-error');
+    errorEmailElement.innerText = 'Email cannot be empty';
   }
-  if (!data.password.length) {
-    let errorPasswordElement = document.getElementById('password-error');
-    errorPasswordElement.classList.add('active');
-    errorPasswordElement.innerText = 'Password cannot be empty';
-
-    let passwordInput = document.getElementById('password');
-    passwordInput.classList.add('input-error');
-    isValidData = false;
-  }
-  return isValidData;
 };
