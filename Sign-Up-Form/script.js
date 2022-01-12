@@ -40,28 +40,28 @@ const checkInputLength = (data) => {
     firstNameElement.classList.add('input-error');
   }
   if (!data.lastName.length) {
-    var errorFirstNameElement = document.getElementsByClassName(
+    var errorLastNameElement = document.getElementsByClassName(
       'signup-form__error last-name'
     )[0];
-    errorFirstNameElement.classList.add('active');
+    errorLastNameElement.classList.add('active');
 
     var lastNameElement = document.getElementById('lastName');
     lastNameElement.classList.add('input-error');
   }
   if (!data.email.length) {
-    var errorFirstNameElement = document.getElementsByClassName(
+    var errorEmailElement = document.getElementsByClassName(
       'signup-form__error email'
     )[0];
-    errorFirstNameElement.classList.add('active');
+    errorEmailElement.classList.add('active');
 
     var emailElement = document.getElementById('email');
     emailElement.classList.add('input-error');
   }
   if (!data.password.length) {
-    var errorFirstNameElement = document.getElementsByClassName(
+    var errorPasswordElement = document.getElementsByClassName(
       'signup-form__error password'
     )[0];
-    errorFirstNameElement.classList.add('active');
+    errorPasswordElement.classList.add('active');
 
     var passwordElement = document.getElementById('password');
     passwordElement.classList.add('input-error');
