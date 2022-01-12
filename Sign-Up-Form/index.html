@@ -16,16 +16,24 @@
   </head>
   <body>
     <div class="signup-form">
-       <form class="signup-form__container" action="" onsubmit="validateForm()">
-        <input type="text" placeholder="First Name" id="firstName" >
-        <input type="text" placeholder="Last Name" id="lastName">
-        <input type="email" placeholder="Email" id="email">
-        <input type="password" placeholder="Password" id="password" >
-        <input type="submit" class="signup-form__button" value="Claim Your Free Trial">
-        <footer class="signup-form__footer">By clicking this button, you are agreeing to our <a href="">Terms and Services</a></footer>
-       </form>
+      <form class="signup-form__container">
+        <input type="text" placeholder="First Name" id="firstName" />
+        <p class="signup-form__error first-name">Test</p>
+        <input type="text" placeholder="Last Name" id="lastName" />
+        <input type="email" placeholder="Email" id="email" />
+        <input type="password" placeholder="Password" id="password" />
+        <input
+          type="submit"
+          class="signup-form__button"
+          value="Claim Your Free Trial"
+        />
+        <footer class="signup-form__footer">
+          By clicking this button, you are agreeing to our
+          <a href="">Terms and Services</a>
+        </footer>
+      </form>
     </div>
   </body>
-  </html>
+</html>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>

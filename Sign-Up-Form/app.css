@@ -16,7 +16,7 @@ input {
 }
 
 a {
-  color: hsl(0, 100%, 74%) ;
+  color: hsl(0, 100%, 74%);
   text-decoration: none;
   font-weight: 700;
 }
@@ -36,7 +36,7 @@ a {
 }
 
 .signup-form__button {
-  background-color:  hsl(154, 59%, 51%);
+  background-color: hsl(154, 59%, 51%);
   text-transform: uppercase;
   color: white;
   border-radius: 5px;
@@ -51,6 +51,14 @@ a {
   font-size: 0.7rem;
 }
 
-.signup-form__button:hover{
+.signup-form__button:hover {
   cursor: pointer;
+}
+
+.signup-form__error {
+  display: none;
+}
+
+.signup-form__error.active {
+  display: block;
 }
