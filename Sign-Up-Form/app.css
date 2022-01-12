@@ -136,4 +136,7 @@ a {
   .page-grid {
     grid-template-columns: auto;
   }
+  .intro {
+    text-align: center;
+  }
 }
