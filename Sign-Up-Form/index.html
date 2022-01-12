@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="app.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <div class="page-grid">
+      <div class="intro">
+        <h1 class="intro__title">Learn to code by watching others</h1>
+        <p class="intro__description">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but not understanding how developers
+          think is invaluable.
+        </p>
+      </div>
+      <div>
+        <div class="trial-box">
+          <p class="trial-box__content">
+            <b>Try it free for 7 days</b> then $20/mo. thereafter
+          </p>
+        </div>
+        <div class="signup-form">
+          <form class="signup-form__container">
+            <!-- Form inputs -->
+            <input type="text" placeholder="First Name" id="firstName" />
+            <p class="signup-form__error" id="first-name-error"></p>
+
+            <input type="text" placeholder="Last Name" id="lastName" />
+            <p class="signup-form__error" id="last-name-error"></p>
+
+            <input type="text" placeholder="Email" id="email" />
+            <p class="signup-form__error" id="email-error"></p>
+
+            <input type="password" placeholder="Password" id="password" />
+            <p class="signup-form__error" id="password-error"></p>
+
+            <input
+              type="submit"
+              class="signup-form__button"
+              value="Claim Your Free Trial"
+            />
+            <footer class="signup-form__footer">
+              By clicking this button, you are agreeing to our
+              <a href="">Terms and Services</a>
+            </footer>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="script.js"></script>
