@@ -11,6 +11,8 @@ input {
   padding: 10px 20px;
   box-sizing: border-box;
   font-weight: 700;
+  border: 2px solid rgba(0, 0, 0, 0.089);
+  border-radius: 5px;
 }
 
 .signup-form {
