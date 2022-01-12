@@ -14,12 +14,11 @@ const validateForm = (event) => {
     password: password,
   };
 
-  const validData = checkInputLength(formData);
-  if (validData) validateEmail(formData.email);
-  else console.log('ree');
+  checkInputLength(formData);
 };
 form.addEventListener('submit', validateForm);
 
+// FIXME: don't make the email validation reliant on other data
 const validateEmail = (email) => {
   const mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   if (!email.match(mailFormat)) {
@@ -34,7 +33,6 @@ const validateEmail = (email) => {
 };
 
 const checkInputLength = (data) => {
-  let allValidData = true;
   if (!data.firstName.length) {
     var errorFirstNameElement = document.getElementsByClassName(
       'signup-form__error first-name'
@@ -43,7 +41,6 @@ const checkInputLength = (data) => {
 
     var firstNameElement = document.getElementById('firstName');
     firstNameElement.classList.add('input-error');
-    allValidData = false;
   }
   if (!data.lastName.length) {
     var errorLastNameElement = document.getElementsByClassName(
@@ -53,7 +50,6 @@ const checkInputLength = (data) => {
 
     var lastNameElement = document.getElementById('lastName');
     lastNameElement.classList.add('input-error');
-    allValidData = false;
   }
   if (!data.email.length) {
     var errorEmailElement = document.getElementsByClassName(
@@ -63,7 +59,8 @@ const checkInputLength = (data) => {
 
     var emailElement = document.getElementById('email');
     emailElement.classList.add('input-error');
-    allValidData = false;
+  } else {
+    validateEmail(data.email);
   }
   if (!data.password.length) {
     var errorPasswordElement = document.getElementsByClassName(
@@ -74,5 +71,4 @@ const checkInputLength = (data) => {
     var passwordElement = document.getElementById('password');
     passwordElement.classList.add('input-error');
   }
-  return allValidData;
 };
