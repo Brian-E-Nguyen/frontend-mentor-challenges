@@ -14,6 +14,7 @@ const validateForm = (event) => {
     password: password,
   };
   validateFirstName(formData.firstName);
+  validateLastName(formData.lastName);
 };
 form.addEventListener('submit', validateForm);
 
@@ -32,19 +33,31 @@ const validateFirstName = (name) => {
   }
 };
 
+const validateLastName = (name) => {
+  let errorLastNameElement = document.getElementById('last-name-error');
+  let lastNameInput = document.getElementById('lastName');
+
+  if (name.length) {
+    errorLastNameElement.classList.remove('active');
+    errorLastNameElement.innerText = '';
+    lastNameInput.classList.remove('input-error');
+  } else {
+    errorLastNameElement.classList.add('active');
+    errorLastNameElement.innerText = 'First Name cannot be empty';
+    lastNameInput.classList.add('input-error');
+  }
+};
+
 const validateEmail = (email) => {
-  let isValidEmail = true;
   const mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-  if (!email.match(mailFormat)) {
+  if (email.match(mailFormat)) {
     let errorEmailElement = document.getElementById('email-error');
     errorEmailElement.classList.add('active');
 
     let emailInput = document.getElementById('email');
     emailInput.classList.add('input-error');
     errorEmailElement.innerText = 'Looks like this is not an email';
-    isValidEmail = false;
   }
-  return isValidEmail;
 };
 
 const checkInputLength = (data) => {
