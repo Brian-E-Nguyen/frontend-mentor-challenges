@@ -49,7 +49,7 @@ const validateLastName = (name) => {
     isValidName = true;
   } else {
     errorLastNameElement.classList.add('active');
-    errorLastNameElement.innerText = 'First Name cannot be empty';
+    errorLastNameElement.innerText = 'Last Name cannot be empty';
     lastNameInput.classList.add('input-error');
   }
 
