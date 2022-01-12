@@ -22,10 +22,15 @@ form.addEventListener('submit', validateForm);
 const validateEmail = (email) => {
   const mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   if (!email.match(mailFormat)) {
-    var errorFirstNameElement = document.getElementsByClassName(
-      'signup-form__error email'
-    )[0];
-    errorFirstNameElement.classList.add('active');
+    // var errorFirstNameElement = document.getElementsByClassName(
+    //   'signup-form__error email'
+    // )[0];
+    // errorFirstNameElement.classList.add('active');
+    var emailElement = document.getElementById('email');
+    emailElement.insertAdjacentHTML(
+      'afterend',
+      '<p class="signup-form__error email active">Looks like this is not an email</p>'
+    );
   }
 };
 
@@ -53,7 +58,6 @@ const checkInputLength = (data) => {
       'signup-form__error email'
     )[0];
     errorEmailElement.classList.add('active');
-
     var emailElement = document.getElementById('email');
     emailElement.classList.add('input-error');
   }
