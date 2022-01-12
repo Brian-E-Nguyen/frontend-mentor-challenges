@@ -7,16 +7,10 @@ const validateForm = (event) => {
   const email = document.getElementById('email').value;
   const password = document.getElementById('password').value;
 
-  const formData = {
-    firstName: firstName,
-    lastName: lastName,
-    email: email,
-    password: password,
-  };
-  validateFirstName(formData.firstName);
-  validateLastName(formData.lastName);
-  validateEmail(formData.email);
-  validatePassword(formData.password);
+  validateFirstName(firstName);
+  validateLastName(lastName);
+  validateEmail(email);
+  validatePassword(password);
 };
 form.addEventListener('submit', validateForm);
 
