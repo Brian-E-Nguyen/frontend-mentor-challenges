@@ -23,16 +23,17 @@ form.addEventListener('submit', validateForm);
 const validateEmail = (email) => {
   const mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   if (!email.match(mailFormat)) {
+    var errorEmailElement = document.getElementsByClassName(
+      'signup-form__error email'
+    )[0];
+    errorEmailElement.classList.add('active');
+    errorEmailElement.innerText = 'Looks like this is not an email';
     var emailElement = document.getElementById('email');
-    let emailErrorMessage =
-      '<p class="signup-form__error active">Looks like this is not an email</p>';
-    emailElement.insertAdjacentHTML('afterend', emailErrorMessage);
+    emailElement.classList.add('input-error');
   }
 };
 
 const checkInputLength = (data) => {
-  let errorMessages = document.getElementsByClassName('active');
-  console.log(errorMessages);
   let allValidData = true;
   if (!data.firstName.length) {
     var errorFirstNameElement = document.getElementsByClassName(
