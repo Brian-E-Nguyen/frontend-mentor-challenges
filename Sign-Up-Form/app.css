@@ -10,6 +10,7 @@ input {
   width: 100%;
   padding: 10px 20px;
   box-sizing: border-box;
+  font-weight: 700;
 }
 
 .signup-form {
@@ -24,4 +25,18 @@ input {
   padding: 25px;
   display: grid;
   gap: 2rem;
+}
+
+.signup-form__button {
+  background-color:  hsl(154, 59%, 51%);
+  text-transform: uppercase;
+  color: white;
+  border-radius: 5px;
+  padding: 20px 50px;
+  border: none;
+  font-weight: 700;
+}
+
+.signup-form__button:hover{
+  cursor: pointer;
 }
