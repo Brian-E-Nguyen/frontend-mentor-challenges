@@ -7,10 +7,14 @@ const validateForm = (event) => {
   const email = document.getElementById('email').value;
   const password = document.getElementById('password').value;
 
-  validateFirstName(firstName);
-  validateLastName(lastName);
-  validateEmail(email);
-  validatePassword(password);
+  const isValidFirstName = validateFirstName(firstName);
+  const isValidLastName = validateLastName(lastName);
+  const isValidEmail = validateEmail(email);
+  const isValidPassword = validatePassword(password);
+
+  if (isValidFirstName && isValidLastName && isValidEmail && isValidPassword) {
+    alert('Form submitted!');
+  }
 };
 form.addEventListener('submit', validateForm);
 
