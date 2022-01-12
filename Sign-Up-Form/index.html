@@ -18,10 +18,17 @@
     <div class="signup-form">
       <form class="signup-form__container">
         <input type="text" placeholder="First Name" id="firstName" />
-        <p class="signup-form__error first-name">Test</p>
+        <p class="signup-form__error first-name">First name cannot be empty</p>
+
         <input type="text" placeholder="Last Name" id="lastName" />
+        <p class="signup-form__error last-name">Last name cannot be empty</p>
+
         <input type="email" placeholder="Email" id="email" />
+        <p class="signup-form__error email">Email cannot be empty</p>
+
         <input type="password" placeholder="Password" id="password" />
+        <p class="signup-form__error password">Password cannot be empty</p>
+
         <input
           type="submit"
           class="signup-form__button"

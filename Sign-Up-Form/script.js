@@ -25,7 +25,22 @@ const checkInputLength = (data) => {
     )[0];
     errorFirstNameElement.classList.add('active');
   }
-  if (!data.lastName.length) console.log(data.lastName);
-  if (!data.email.length) console.log(data.email);
-  if (!data.password.length) console.log(data.password);
+  if (!data.lastName.length) {
+    var errorFirstNameElement = document.getElementsByClassName(
+      'signup-form__error last-name'
+    )[0];
+    errorFirstNameElement.classList.add('active');
+  }
+  if (!data.email.length) {
+    var errorFirstNameElement = document.getElementsByClassName(
+      'signup-form__error email'
+    )[0];
+    errorFirstNameElement.classList.add('active');
+  }
+  if (!data.password.length) {
+    var errorFirstNameElement = document.getElementsByClassName(
+      'signup-form__error password'
+    )[0];
+    errorFirstNameElement.classList.add('active');
+  }
 };
