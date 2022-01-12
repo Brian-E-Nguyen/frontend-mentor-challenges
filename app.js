@@ -19,6 +19,7 @@ const cardData = [
     siteSrc: './Sign-Up-Form/index.html',
     githubSrc:
       'https://github.com/Brian-E-Nguyen/frontend-mentor-challenges/tree/master/Sign-Up-Form',
+    javascript: true,
   },
 ];
 
@@ -35,6 +36,11 @@ cardData.forEach((data) => {
       <p>
         <span class="challenge-card__language--html">HTML</span>
         <span class="challenge-card__language--css">CSS</span>
+        ${
+          data.javascript
+            ? ' <span class="challenge-card__language--js">JS</span>'
+            : ''
+        }
       </p>
       <a class="challenge-card__link" href="${data.siteSrc}">
         <button

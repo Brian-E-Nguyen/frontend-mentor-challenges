@@ -64,7 +64,8 @@ body {
 }
 
 .challenge-card__language--html,
-.challenge-card__language--css {
+.challenge-card__language--css,
+.challenge-card__language--js {
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -75,6 +76,9 @@ body {
 
 .challenge-card__language--css {
   color: rgb(62, 84, 163);
+}
+.challenge-card__language--js {
+  color: rgb(207, 99, 144);
 }
 
 .challenge-card__button {
