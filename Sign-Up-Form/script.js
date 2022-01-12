@@ -14,8 +14,9 @@ const validateForm = (event) => {
     password: password,
   };
 
-  checkInputLength(formData);
-  validateEmail(formData.email);
+  const validData = checkInputLength(formData);
+  if (validData) validateEmail(formData.email);
+  else console.log('ree');
 };
 form.addEventListener('submit', validateForm);
 
@@ -30,38 +31,47 @@ const validateEmail = (email) => {
 };
 
 const checkInputLength = (data) => {
+  let errorMessages = document.getElementsByClassName('active');
+  console.log(errorMessages);
   let allValidData = true;
   if (!data.firstName.length) {
-    const firstNameElement = document.getElementById('firstName');
+    var errorFirstNameElement = document.getElementsByClassName(
+      'signup-form__error first-name'
+    )[0];
+    errorFirstNameElement.classList.add('active');
+
+    var firstNameElement = document.getElementById('firstName');
     firstNameElement.classList.add('input-error');
-    let firstNameErrorMessage =
-      '<p class="signup-form__error active">First name cannot be empty</p>';
-    firstNameElement.insertAdjacentHTML('afterend', firstNameErrorMessage);
     allValidData = false;
   }
   if (!data.lastName.length) {
-    const lastNameElement = document.getElementById('lastName');
+    var errorLastNameElement = document.getElementsByClassName(
+      'signup-form__error last-name'
+    )[0];
+    errorLastNameElement.classList.add('active');
+
+    var lastNameElement = document.getElementById('lastName');
     lastNameElement.classList.add('input-error');
-    let lastNameErrorMessage =
-      '<p class="signup-form__error active">Last name cannot be empty</p>';
-    lastNameElement.insertAdjacentHTML('afterend', lastNameErrorMessage);
     allValidData = false;
   }
   if (!data.email.length) {
-    const emailElement = document.getElementById('email');
+    var errorEmailElement = document.getElementsByClassName(
+      'signup-form__error email'
+    )[0];
+    errorEmailElement.classList.add('active');
+
+    var emailElement = document.getElementById('email');
     emailElement.classList.add('input-error');
-    let emailErrorMessage =
-      '<p class="signup-form__error active">Email cannot be empty</p>';
-    emailElement.insertAdjacentHTML('afterend', emailErrorMessage);
     allValidData = false;
   }
   if (!data.password.length) {
-    const passwordElement = document.getElementById('password');
+    var errorPasswordElement = document.getElementsByClassName(
+      'signup-form__error password'
+    )[0];
+    errorPasswordElement.classList.add('active');
+
+    var passwordElement = document.getElementById('password');
     passwordElement.classList.add('input-error');
-    let passwordErrorMessage =
-      '<p class="signup-form__error active">Password cannot be empty</p>';
-    passwordElement.insertAdjacentHTML('afterend', passwordErrorMessage);
-    allValidData = false;
   }
   return allValidData;
 };
