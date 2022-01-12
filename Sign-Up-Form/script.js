@@ -1,5 +1,5 @@
 const form = document.getElementsByClassName('signup-form__container')[0];
-console.log(form);
+
 const validateForm = (event) => {
   event.preventDefault();
   const firstName = document.getElementById('firstName').value;
@@ -18,13 +18,14 @@ const validateForm = (event) => {
 };
 form.addEventListener('submit', validateForm);
 
-// FIXME: don't make the email validation reliant on other data
 const validateEmail = (email) => {
   const mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   if (!email.match(mailFormat)) {
-    let errorEmailElement = document.getElementsByClassName(
-      'signup-form__error email'
-    )[0];
+    let errorEmailElement = document.getElementById('email-error');
+    errorEmailElement.classList.add('active');
+
+    let emailInput = document.getElementById('email');
+    emailInput.classList.add('input-error');
     errorEmailElement.classList.add('active');
     errorEmailElement.innerText = 'Looks like this is not an email';
     let emailElement = document.getElementById('email');
