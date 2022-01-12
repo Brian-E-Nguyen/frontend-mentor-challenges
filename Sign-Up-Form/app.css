@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
 
 html {
   background-image: url(./images/bg-intro-desktop.png);
@@ -19,6 +19,21 @@ a {
   color: hsl(0, 100%, 74%);
   text-decoration: none;
   font-weight: 700;
+}
+
+.page-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.intro {
+  color: white;
+}
+
+.intro__title {
+  font-weight: bold;
+  font-size: 3rem;
 }
 
 .signup-form {
