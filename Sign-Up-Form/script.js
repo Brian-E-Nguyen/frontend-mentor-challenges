@@ -16,6 +16,7 @@ const validateForm = (event) => {
   validateFirstName(formData.firstName);
   validateLastName(formData.lastName);
   validateEmail(formData.email);
+  validatePassword(formData.password);
 };
 form.addEventListener('submit', validateForm);
 
@@ -68,5 +69,20 @@ const validateEmail = (email) => {
     errorEmailElement.classList.add('active');
     emailInput.classList.add('input-error');
     errorEmailElement.innerText = 'Email cannot be empty';
+  }
+};
+
+const validatePassword = (password) => {
+  let errorPasswordElement = document.getElementById('password-error');
+  let passwordInput = document.getElementById('password');
+
+  if (password.length) {
+    errorPasswordElement.classList.remove('active');
+    errorPasswordElement.innerText = '';
+    passwordInput.classList.remove('input-error');
+  } else {
+    errorPasswordElement.classList.add('active');
+    errorPasswordElement.innerText = 'Password cannot be empty';
+    passwordInput.classList.add('input-error');
   }
 };
