@@ -23,7 +23,7 @@ a {
 
 .page-grid {
   display: grid;
-  grid-template-columns: 400px auto;
+  grid-template-columns: 500px auto;
   gap: 3rem;
   position: absolute;
   top: 50%;
@@ -33,6 +33,8 @@ a {
 
 .intro {
   color: white;
+  position: relative;
+  top: 25%;
 }
 
 .intro__title {
