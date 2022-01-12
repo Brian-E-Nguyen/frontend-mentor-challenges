@@ -44,16 +44,21 @@ a {
   padding: 20px 50px;
   border: none;
   font-weight: 700;
+  transition: background-color 0.1s;
+}
+
+.signup-form__button:hover {
+  cursor: pointer;
+}
+
+.signup-form__button:active {
+  background-color: hsl(154, 100%, 69%);
 }
 
 .signup-form__footer {
   text-align: center;
   color: hsl(246, 25%, 77%);
   font-size: 0.7rem;
-}
-
-.signup-form__button:hover {
-  cursor: pointer;
 }
 
 .input-error {
