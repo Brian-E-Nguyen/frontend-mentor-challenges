@@ -22,52 +22,46 @@ form.addEventListener('submit', validateForm);
 const validateEmail = (email) => {
   const mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   if (!email.match(mailFormat)) {
-    // var errorFirstNameElement = document.getElementsByClassName(
-    //   'signup-form__error email'
-    // )[0];
-    // errorFirstNameElement.classList.add('active');
     var emailElement = document.getElementById('email');
-    emailElement.insertAdjacentHTML(
-      'afterend',
-      '<p class="signup-form__error email active">Looks like this is not an email</p>'
-    );
+    let emailErrorMessage =
+      '<p class="signup-form__error active">Looks like this is not an email</p>';
+    emailElement.insertAdjacentHTML('afterend', emailErrorMessage);
   }
 };
 
 const checkInputLength = (data) => {
+  let allValidData = true;
   if (!data.firstName.length) {
-    var errorFirstNameElement = document.getElementsByClassName(
-      'signup-form__error first-name'
-    )[0];
-    errorFirstNameElement.classList.add('active');
-
-    var firstNameElement = document.getElementById('firstName');
+    const firstNameElement = document.getElementById('firstName');
     firstNameElement.classList.add('input-error');
+    let firstNameErrorMessage =
+      '<p class="signup-form__error active">First name cannot be empty</p>';
+    firstNameElement.insertAdjacentHTML('afterend', firstNameErrorMessage);
+    allValidData = false;
   }
   if (!data.lastName.length) {
-    var errorLastNameElement = document.getElementsByClassName(
-      'signup-form__error last-name'
-    )[0];
-    errorLastNameElement.classList.add('active');
-
-    var lastNameElement = document.getElementById('lastName');
+    const lastNameElement = document.getElementById('lastName');
     lastNameElement.classList.add('input-error');
+    let lastNameErrorMessage =
+      '<p class="signup-form__error active">Last name cannot be empty</p>';
+    lastNameElement.insertAdjacentHTML('afterend', lastNameErrorMessage);
+    allValidData = false;
   }
   if (!data.email.length) {
-    var errorEmailElement = document.getElementsByClassName(
-      'signup-form__error email'
-    )[0];
-    errorEmailElement.classList.add('active');
-    var emailElement = document.getElementById('email');
+    const emailElement = document.getElementById('email');
     emailElement.classList.add('input-error');
+    let emailErrorMessage =
+      '<p class="signup-form__error active">Email cannot be empty</p>';
+    emailElement.insertAdjacentHTML('afterend', emailErrorMessage);
+    allValidData = false;
   }
   if (!data.password.length) {
-    var errorPasswordElement = document.getElementsByClassName(
-      'signup-form__error password'
-    )[0];
-    errorPasswordElement.classList.add('active');
-
-    var passwordElement = document.getElementById('password');
+    const passwordElement = document.getElementById('password');
     passwordElement.classList.add('input-error');
+    let passwordErrorMessage =
+      '<p class="signup-form__error active">Password cannot be empty</p>';
+    passwordElement.insertAdjacentHTML('afterend', passwordErrorMessage);
+    allValidData = false;
   }
+  return allValidData;
 };
