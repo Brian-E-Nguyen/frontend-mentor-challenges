@@ -23,7 +23,7 @@ a {
 
 .page-grid {
   display: grid;
-  grid-template-columns: 500px auto;
+  grid-template-columns: 500px 500px;
   gap: 3rem;
   position: absolute;
   top: 50%;
@@ -58,7 +58,7 @@ a {
 
 .signup-form {
   background-color: white;
-  width: 500px;
+  width: 100%;
   height: auto;
   border-radius: 3%;
   overflow: hidden;
@@ -115,4 +115,25 @@ a {
   font-size: 0.8rem;
   font-style: italic;
   color: hsl(0, 100%, 74%);
+}
+
+@media (max-width: 1150px) {
+  .signup-form {
+    width: 400px;
+  }
+  .page-grid {
+    grid-template-columns: 400px auto;
+  }
+}
+
+@media (max-width: 870px) {
+  .intro {
+    position: static;
+  }
+  .signup-form {
+    width: auto;
+  }
+  .page-grid {
+    grid-template-columns: auto;
+  }
 }
