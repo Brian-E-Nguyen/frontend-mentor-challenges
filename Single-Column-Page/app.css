@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+html {
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+h1 {
+  font-weight: 300;
+  margin-top: 4rem;
+}
+
+img {
+  margin: auto;
+}
+
 .container {
   display: grid;
   grid-template-columns: auto;
@@ -5,5 +20,5 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* text-align: center; */
+  text-align: center;
 }
