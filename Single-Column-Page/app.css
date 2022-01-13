@@ -27,7 +27,7 @@ img {
 
 .input-container {
   display: grid;
-  grid-template-columns: 300px 100px;
+  grid-template-columns: 400px 200px;
   gap: 1.5rem;
 }
 
@@ -37,4 +37,20 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.226);
   font-family: 'Libre Franklin', sans-serif;
   font-weight: 300;
+}
+
+.btn--notify {
+  background-color: hsl(223, 87%, 63%);
+  color: white;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 600;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.212);
+  transition: background-color 0.2s;
+}
+
+.btn--notify:active {
+  background-color: hsl(223, 100%, 88%);
 }
