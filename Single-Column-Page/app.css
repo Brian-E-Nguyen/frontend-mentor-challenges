@@ -24,3 +24,9 @@ img {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+.input-container {
+  display: grid;
+  grid-template-columns: 300px 100px;
+  gap: 1.5rem;
+}
