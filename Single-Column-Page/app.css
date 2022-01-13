@@ -41,7 +41,9 @@ footer {
 
 #input-box__email {
   border-radius: 20px;
-  padding: 10px 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
   border: 1px solid rgba(0, 0, 0, 0.226);
   font-family: 'Libre Franklin', sans-serif;
   font-weight: 300;
