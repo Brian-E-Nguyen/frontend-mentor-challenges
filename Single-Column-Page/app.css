@@ -58,6 +58,11 @@ img {
   max-height: 40px;
 }
 
+.btn--social {
+  display: inline-block;
+  /* width: 10px; */
+}
+
 .btn--notify:active {
   background-color: hsl(223, 100%, 88%);
 }
