@@ -65,6 +65,7 @@ footer {
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.212);
   transition: background-color 0.2s;
   height: 100%;
+  width: 60%;
 }
 
 .btn--social {
@@ -92,7 +93,7 @@ footer {
 }
 
 .illustration {
-  width: 100%;
+  width: 70%;
   margin-top: 4rem;
 }
 
@@ -119,5 +120,9 @@ footer {
   .btn--notify {
     padding-top: 10px;
     padding-bottom: 10px;
+    width: 100%;
+  }
+  .illustration {
+    width: 100%;
   }
 }
