@@ -59,7 +59,7 @@ body {
 }
 
 .challenge-card__banner {
-  object-fit: fill;
+  object-fit: cover;
   height: 250px;
   width: 100%;
 }
