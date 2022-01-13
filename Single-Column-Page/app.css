@@ -7,6 +7,10 @@ html {
 h1 {
   font-weight: 300;
   margin-top: 4rem;
+  margin-bottom: 0;
+}
+p {
+  margin-bottom: 2rem;
 }
 span {
   font-weight: 700;
@@ -124,5 +128,8 @@ footer {
   }
   .illustration {
     width: 100%;
+  }
+  .btn--notify {
+    padding: 0.8rem 0;
   }
 }
