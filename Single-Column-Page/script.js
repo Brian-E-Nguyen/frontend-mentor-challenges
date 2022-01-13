@@ -1,9 +1,16 @@
 const form = document.getElementsByTagName('form')[0];
 
-const validateEmail = (event) => {
+const formHandler = (event) => {
   event.preventDefault();
 
   let email = document.getElementById('input-box__email').value;
+  const isValidEmail = validateEmail(email);
+  if (isValidEmail) {
+    alert('Email submitted!');
+  }
+};
+
+const validateEmail = (email) => {
   let inputBox = document.getElementById('input-box__email');
   let errorMessage = document.getElementById('error-message');
 
@@ -29,4 +36,4 @@ const validateEmail = (event) => {
   return isValidEmail;
 };
 
-form.addEventListener('submit', validateEmail);
+form.addEventListener('submit', formHandler);
