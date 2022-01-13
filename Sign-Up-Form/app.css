@@ -135,6 +135,7 @@ a {
   }
   .page-grid {
     grid-template-columns: auto;
+    height: 100vh;
   }
   .intro {
     text-align: center;
