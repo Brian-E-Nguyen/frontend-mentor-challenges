@@ -12,13 +12,18 @@ const validateEmail = (event) => {
 
   if (email.length) {
     if (email.match(emailFormat)) {
+      errorMessage.classList.remove('active');
+      errorMessage.innerText = '';
+      inputBox.classList.remove('active-error');
       isValidEmail = true;
     } else {
+      errorMessage.classList.add('active');
+      errorMessage.innerText = 'Please provide a valid email address';
+      inputBox.classList.add('active-error');
     }
   } else {
     errorMessage.classList.add('active');
     errorMessage.innerText = 'Field cannot be blank';
-
     inputBox.classList.add('active-error');
   }
   return isValidEmail;
