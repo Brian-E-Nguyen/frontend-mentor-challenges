@@ -21,6 +21,14 @@ const cardData = [
       'https://github.com/Brian-E-Nguyen/frontend-mentor-challenges/tree/master/Sign-Up-Form',
     javascript: true,
   },
+  {
+    title: 'Single-Column Page',
+    image: './Single-Column-Page/design/desktop-design.jpg',
+    siteSrc: './Single-Column-Page/index.html',
+    githubSrc:
+      'https://github.com/Brian-E-Nguyen/frontend-mentor-challenges/tree/master/Single-Column-Page',
+    javascript: true,
+  },
 ];
 
 cardData.forEach((data) => {
