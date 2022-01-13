@@ -31,13 +31,18 @@ img {
   gap: 1.5rem;
 }
 
-.input__email {
+#input-box__email {
   border-radius: 20px;
   padding: 10px 15px;
   border: 1px solid rgba(0, 0, 0, 0.226);
   font-family: 'Libre Franklin', sans-serif;
   font-weight: 300;
   width: 90%;
+}
+
+#input-box__email.active-error {
+  border-color: hsl(354, 100%, 66%);
+  color: hsl(354, 100%, 66%);
 }
 
 .btn--notify {
