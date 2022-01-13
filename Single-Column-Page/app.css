@@ -66,6 +66,11 @@ img {
   background-color: rgba(0, 0, 0, 0);
   color: hsl(223, 87%, 63%);
   transition: background-color 0.3s, color 0.3s;
+  margin: 0 10px;
+}
+
+.social-buttons {
+  margin-top: 3rem;
 }
 
 .btn--social:hover {
