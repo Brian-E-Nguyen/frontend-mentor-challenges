@@ -30,3 +30,11 @@ img {
   grid-template-columns: 300px 100px;
   gap: 1.5rem;
 }
+
+.input__email {
+  border-radius: 20px;
+  padding: 10px 15px;
+  border: 1px solid rgba(0, 0, 0, 0.226);
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 300;
+}
