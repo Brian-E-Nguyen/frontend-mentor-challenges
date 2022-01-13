@@ -14,6 +14,12 @@ span {
 img {
   margin: auto;
 }
+footer {
+  font-weight: 300;
+  font-size: 0.7rem;
+  color: hsl(0, 0%, 40%);
+  margin-top: 3rem;
+}
 
 .container {
   display: grid;
