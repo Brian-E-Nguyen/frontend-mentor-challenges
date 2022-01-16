@@ -36,3 +36,10 @@ html {
 .stat-card__previous-time {
   font-weight: 300;
 }
+
+.profile-card {
+  grid-row: span 2;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 3%;
+  width: 250px;
+}
