@@ -1,9 +1,16 @@
+/**
+ *
+ * @returns data from data.json file
+ */
 const retrieveData = async () => {
   const response = await fetch('./data.json');
   const data = await response.json();
   return data;
 };
 
+/**
+ * Populates non-numeric data from data.json file
+ */
 const populateStaticData = async () => {
   const data = await retrieveData();
   const titles = document.getElementsByClassName('stat-card__title');
@@ -11,6 +18,14 @@ const populateStaticData = async () => {
     titles[i].innerText = `${data[i].title}`;
   }
 };
+
+/**
+ * Displays data on card
+ *
+ * @param {*} currentData
+ * @param {*} previousData
+ * @param {*} i
+ */
 const displayData = async (currentData, previousData, i) => {
   let currentTime = document.getElementsByClassName('stat-card__time')[i];
   let previousTime = document.getElementsByClassName(
@@ -20,6 +35,9 @@ const displayData = async (currentData, previousData, i) => {
   previousTime.innerText = `Last week - ${previousData}hrs`;
 };
 
+/**
+ * Retrieves daily data and passes them to displayData() function
+ */
 const populateDailyData = async () => {
   const data = await retrieveData();
   for (let i = 0; i < data.length; i++) {
@@ -29,6 +47,9 @@ const populateDailyData = async () => {
   }
 };
 
+/**
+ * Retrieves weekly data and passes them to displayData() function
+ */
 const populateWeeklyData = async () => {
   const data = await retrieveData();
   for (let i = 0; i < data.length; i++) {
@@ -38,6 +59,9 @@ const populateWeeklyData = async () => {
   }
 };
 
+/**
+ * Retrieves monthly data and passes them to displayData() function
+ */
 const populateMonthlyData = async () => {
   const data = await retrieveData();
   for (let i = 0; i < data.length; i++) {
