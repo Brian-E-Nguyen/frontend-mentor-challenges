@@ -24,15 +24,16 @@ const populateStaticData = async () => {
  *
  * @param {*} currentData
  * @param {*} previousData
+ * @param {*} timeframe
  * @param {*} i
  */
-const displayData = async (currentData, previousData, i) => {
+const displayData = async (currentData, previousData, timeframe, i) => {
   let currentTime = document.getElementsByClassName('stat-card__time')[i];
   let previousTime = document.getElementsByClassName(
     'stat-card__previous-time'
   )[i];
   currentTime.innerText = currentData + 'hrs';
-  previousTime.innerText = `Last week - ${previousData}hrs`;
+  previousTime.innerText = `${timeframe} - ${previousData}hrs`;
 };
 
 /**
@@ -40,10 +41,11 @@ const displayData = async (currentData, previousData, i) => {
  */
 const populateDailyData = async () => {
   const data = await retrieveData();
+  const timeframe = 'Yesterday';
   for (let i = 0; i < data.length; i++) {
     const currentData = data[i].timeframes.daily.current;
     const previousData = data[i].timeframes.daily.previous;
-    displayData(currentData, previousData, i);
+    displayData(currentData, previousData, timeframe, i);
   }
 };
 
@@ -52,10 +54,11 @@ const populateDailyData = async () => {
  */
 const populateWeeklyData = async () => {
   const data = await retrieveData();
+  const timeframe = 'Last Week';
   for (let i = 0; i < data.length; i++) {
     const currentData = data[i].timeframes.weekly.current;
     const previousData = data[i].timeframes.weekly.previous;
-    displayData(currentData, previousData, i);
+    displayData(currentData, previousData, timeframe, i);
   }
 };
 
@@ -64,10 +67,11 @@ const populateWeeklyData = async () => {
  */
 const populateMonthlyData = async () => {
   const data = await retrieveData();
+  const timeframe = 'Last Month';
   for (let i = 0; i < data.length; i++) {
     const currentData = data[i].timeframes.monthly.current;
     const previousData = data[i].timeframes.monthly.previous;
-    displayData(currentData, previousData, i);
+    displayData(currentData, previousData, timeframe, i);
   }
 };
 
