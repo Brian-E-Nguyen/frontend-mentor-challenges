@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
 html {
   background-color: hsl(226, 43%, 10%);
   color: white;
+  font-family: 'Rubik', sans-serif;
 }
 
 .grid-container {
@@ -18,4 +21,18 @@ html {
   height: 200px;
   background-color: hsl(235, 46%, 20%);
   border-radius: 3%;
+}
+
+.stat-card__title {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.stat-card__time {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.stat-card__previous-time {
+  font-weight: 300;
 }
