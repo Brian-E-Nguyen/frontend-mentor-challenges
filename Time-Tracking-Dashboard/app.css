@@ -25,9 +25,25 @@ html {
   background-position-x: right;
 }
 
+.stat-card__container {
+  position: relative;
+  height: 80%;
+  width: 100%;
+  border-radius: 10% 10% 3% 3%;
+  bottom: -20%;
+  background-color: hsl(235, 46%, 20%);
+  overflow: hidden;
+}
+
 #work {
   background-color: hsl(15, 100%, 70%);
   background-image: url(./images/icon-work.svg);
+}
+
+.stat-card__title,
+.stat-card__time,
+.stat-card__previous-time {
+  margin-left: 10px;
 }
 
 .stat-card__title {
@@ -38,6 +54,7 @@ html {
 .stat-card__time {
   font-size: 3rem;
   font-weight: 300;
+  margin: 0 0 0 10px;
 }
 
 .stat-card__previous-time {
