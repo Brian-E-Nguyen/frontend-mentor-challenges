@@ -144,3 +144,18 @@ html {
 .profile-card__report {
   margin-left: 30px;
 }
+
+.profile-card__timeframe-buttons {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 1rem;
+  justify-items: left;
+  margin: 15px 15px;
+}
+
+.btn-stat {
+  display: block;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border: none;
+}
