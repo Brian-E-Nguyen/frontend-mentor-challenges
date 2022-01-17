@@ -41,6 +41,11 @@ html {
   background-image: url(./images/icon-work.svg);
 }
 
+#play {
+  background-color: hsl(195, 74%, 62%);
+  background-image: url(./images/icon-play.svg);
+}
+
 .stat-card__title,
 .stat-card__time,
 .stat-card__previous-time {
@@ -59,6 +64,7 @@ html {
 }
 
 .stat-card__previous-time {
+  font-size: 0.8rem;
   font-weight: 300;
 }
 
