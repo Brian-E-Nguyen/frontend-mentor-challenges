@@ -46,6 +46,11 @@ html {
   background-image: url(./images/icon-play.svg);
 }
 
+#study {
+  background-color: hsl(348, 100%, 68%);
+  background-image: url(./images/icon-study.svg);
+}
+
 .stat-card__title,
 .stat-card__time,
 .stat-card__previous-time {
