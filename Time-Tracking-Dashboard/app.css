@@ -127,6 +127,8 @@ html {
   width: 80px;
   border-radius: 50%;
   border: 3px solid white;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .profile-card__report {
@@ -136,4 +138,9 @@ html {
 
 .profile-card__name {
   font-size: 2.4rem;
+}
+
+.profile-card__picture,
+.profile-card__report {
+  margin-left: 30px;
 }
