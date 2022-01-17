@@ -115,3 +115,10 @@ html {
   border-radius: 3%;
   width: 250px;
 }
+
+.profile-card__info {
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 3%;
+  width: 100%;
+  height: 70%;
+}
