@@ -51,6 +51,21 @@ html {
   background-image: url(./images/icon-study.svg);
 }
 
+#exercise {
+  background-color: hsl(145, 58%, 55%);
+  background-image: url(./images/icon-exercise.svg);
+}
+
+#social {
+  background-color: hsl(264, 64%, 52%);
+  background-image: url(./images/icon-social.svg);
+}
+
+#self-care {
+  background-color: hsl(43, 84%, 65%);
+  background-image: url(./images/icon-self-care.svg);
+}
+
 .stat-card__title,
 .stat-card__time,
 .stat-card__previous-time {
