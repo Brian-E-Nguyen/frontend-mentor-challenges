@@ -26,6 +26,17 @@ html {
   background-size: 55px;
 }
 
+.stat-card__ellipse {
+  display: inline-block;
+  position: absolute;
+  left: 75%;
+  top: 20px;
+}
+
+.stat-card__ellipse:hover {
+  cursor: pointer;
+}
+
 .stat-card__container {
   position: relative;
   height: 80%;
@@ -81,6 +92,7 @@ html {
 .stat-card__title {
   font-size: 1rem;
   font-weight: 500;
+  display: inline-block;
 }
 
 .stat-card__time {
