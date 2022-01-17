@@ -34,6 +34,12 @@ html {
   bottom: -20%;
   background-color: hsl(235, 46%, 20%);
   overflow: hidden;
+  transition: background-color 0.5s;
+}
+
+.stat-card__container:hover {
+  background-color: hsl(236, 45%, 33%);
+  cursor: pointer;
 }
 
 #work {
