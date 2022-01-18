@@ -40,6 +40,9 @@ const displayData = async (currentData, previousData, timeframe, i) => {
  * Retrieves daily data and passes them to displayData() function
  */
 const populateDailyData = async () => {
+  const dailyButton = document.getElementById('btn-daily');
+  dailyButton.classList.add('active');
+
   const data = await retrieveData();
   const timeframe = 'Yesterday';
   for (let i = 0; i < data.length; i++) {
