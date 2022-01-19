@@ -185,6 +185,7 @@ html {
   }
   .profile-card__timeframe-buttons {
     grid-template-columns: auto auto auto;
+    justify-items: center;
   }
   .profile-card__info-container {
     grid-template-columns: auto auto;
@@ -196,5 +197,16 @@ html {
   }
   .profile-card__name {
     font-size: 1.8rem;
+  }
+  .stat-card__time {
+    display: inline-block;
+  }
+
+  .stat-card__previous-time {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
