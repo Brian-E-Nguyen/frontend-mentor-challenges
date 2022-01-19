@@ -78,6 +78,14 @@ const populateMonthlyData = async () => {
   }
 };
 
+const removeButtonActiveClass = () => {
+  const timeframeButtons = document.getElementsByClassName('btn-stat');
+  for (let i = 0; i < timeframeButtons.length; i++) {
+    timeframeButtons[i].classList.remove('active');
+  }
+};
+
+removeButtonActiveClass();
 populateStaticData();
 populateDailyData();
 
