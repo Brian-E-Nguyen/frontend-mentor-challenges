@@ -27,7 +27,6 @@ html {
 }
 
 .stat-card__ellipse {
-  display: inline-block;
   position: absolute;
   left: 75%;
   top: 20px;
@@ -206,7 +205,10 @@ html {
     display: inline-block;
     position: relative;
     top: 50%;
-    left: 50%;
+    left: 45%;
     transform: translate(-50%, -50%);
+  }
+  .stat-card__ellipse {
+    left: 85%;
   }
 }
