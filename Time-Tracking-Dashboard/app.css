@@ -88,7 +88,7 @@ html {
 .stat-card__title,
 .stat-card__time,
 .stat-card__previous-time {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .stat-card__title {
@@ -100,7 +100,7 @@ html {
 .stat-card__time {
   font-size: 3rem;
   font-weight: 300;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 20px;
 }
 
 .stat-card__previous-time {
@@ -181,6 +181,7 @@ html {
   }
   .stat-card {
     width: 100%;
+    height: 150px;
   }
   .profile-card__timeframe-buttons {
     grid-template-columns: auto auto auto;
