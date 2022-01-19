@@ -40,6 +40,7 @@ const displayData = async (currentData, previousData, timeframe, i) => {
  * Retrieves daily data and passes them to displayData() function
  */
 const populateDailyData = async () => {
+  removeButtonActiveClass();
   const dailyButton = document.getElementById('btn-daily');
   dailyButton.classList.add('active');
 
@@ -56,6 +57,10 @@ const populateDailyData = async () => {
  * Retrieves weekly data and passes them to displayData() function
  */
 const populateWeeklyData = async () => {
+  removeButtonActiveClass();
+  const weeklyButton = document.getElementById('btn-weekly');
+  weeklyButton.classList.add('active');
+
   const data = await retrieveData();
   const timeframe = 'Last Week';
   for (let i = 0; i < data.length; i++) {
@@ -69,6 +74,10 @@ const populateWeeklyData = async () => {
  * Retrieves monthly data and passes them to displayData() function
  */
 const populateMonthlyData = async () => {
+  removeButtonActiveClass();
+  const monthlyButton = document.getElementById('btn-monthly');
+  monthlyButton.classList.add('active');
+
   const data = await retrieveData();
   const timeframe = 'Last Month';
   for (let i = 0; i < data.length; i++) {
@@ -78,6 +87,9 @@ const populateMonthlyData = async () => {
   }
 };
 
+/**
+ * Removes buttons' "active" class when user clicks on a button
+ */
 const removeButtonActiveClass = () => {
   const timeframeButtons = document.getElementsByClassName('btn-stat');
   for (let i = 0; i < timeframeButtons.length; i++) {
@@ -85,7 +97,6 @@ const removeButtonActiveClass = () => {
   }
 };
 
-removeButtonActiveClass();
 populateStaticData();
 populateDailyData();
 
