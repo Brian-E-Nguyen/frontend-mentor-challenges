@@ -190,9 +190,11 @@ html {
     grid-template-columns: auto auto;
   }
   .profile-card__report {
-    display: inline-block;
+    margin: 10% 2%;
+    position: relative;
+    top: 20px;
   }
   .profile-card__name {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
   }
 }
