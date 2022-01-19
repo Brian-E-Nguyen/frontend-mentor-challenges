@@ -169,3 +169,19 @@ html {
 .active {
   color: white;
 }
+
+@media (min-width: 970px) {
+  .grid-container {
+    grid-template-columns: 350px;
+  }
+  .profile-card {
+    grid-row: span 0;
+    width: 100%;
+  }
+  .stat-card {
+    width: 100%;
+  }
+  .profile-card__timeframe-buttons {
+    grid-template-columns: auto auto auto;
+  }
+}
