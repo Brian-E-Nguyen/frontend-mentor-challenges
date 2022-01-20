@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+html {
+  background-color: hsl(226, 43%, 10%);
+  color: white;
+  font-family: 'Rubik', sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.stat-card {
+  width: 200px;
+  height: 200px;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 3%;
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-size: 55px;
+}
+
+.stat-card__ellipse {
+  position: absolute;
+  left: 75%;
+  top: 20px;
+}
+
+.stat-card__ellipse:hover {
+  cursor: pointer;
+}
+
+.stat-card__container {
+  position: relative;
+  height: 80%;
+  width: 100%;
+  border-radius: 10% 10% 3% 3%;
+  bottom: -20%;
+  background-color: hsl(235, 46%, 20%);
+  overflow: hidden;
+  transition: background-color 0.1s;
+}
+
+.stat-card__container:hover {
+  cursor: pointer;
+}
+
+.stat-card__container:active {
+  background-color: hsl(236, 45%, 33%);
+}
+
+#work {
+  background-color: hsl(15, 100%, 70%);
+  background-image: url(./images/icon-work.svg);
+}
+
+#play {
+  background-color: hsl(195, 74%, 62%);
+  background-image: url(./images/icon-play.svg);
+}
+
+#study {
+  background-color: hsl(348, 100%, 68%);
+  background-image: url(./images/icon-study.svg);
+}
+
+#exercise {
+  background-color: hsl(145, 58%, 55%);
+  background-image: url(./images/icon-exercise.svg);
+}
+
+#social {
+  background-color: hsl(264, 64%, 52%);
+  background-image: url(./images/icon-social.svg);
+}
+
+#self-care {
+  background-color: hsl(43, 84%, 65%);
+  background-image: url(./images/icon-self-care.svg);
+}
+
+.stat-card__title,
+.stat-card__time,
+.stat-card__previous-time {
+  margin-left: 20px;
+}
+
+.stat-card__title {
+  font-size: 1rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.stat-card__time-grid {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.stat-card__time {
+  font-size: 3rem;
+  font-weight: 300;
+  margin: 0 0 0 20px;
+}
+
+.stat-card__previous-time {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.profile-card {
+  grid-row: span 2;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 3%;
+  width: 250px;
+}
+
+.profile-card__info-container {
+  display: grid;
+  grid-template-columns: auto;
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 3%;
+  width: 100%;
+  height: 70%;
+}
+
+.profile-card__picture {
+  width: 80px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.profile-card__report {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.profile-card__name {
+  font-size: 2.4rem;
+}
+
+.profile-card__picture,
+.profile-card__report {
+  margin-left: 30px;
+}
+
+.profile-card__timeframe-buttons {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 1rem;
+  justify-items: left;
+  margin: 15px 15px;
+}
+
+.btn-stat {
+  display: block;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(167, 167, 167);
+  border: none;
+  transition: color 0.3;
+}
+
+.btn-stat:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.active {
+  color: white;
+}
+
+@media (max-width: 970px) {
+  .grid-container {
+    grid-template-columns: 350px;
+  }
+  .profile-card {
+    grid-row: span 0;
+    width: 100%;
+    margin-top: 500px;
+  }
+  .stat-card {
+    width: 100%;
+    height: 150px;
+  }
+  .profile-card__timeframe-buttons {
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+  }
+  .profile-card__info-container {
+    grid-template-columns: auto auto;
+  }
+  .profile-card__report {
+    margin: 10% 2%;
+    position: relative;
+    top: 20px;
+  }
+  .profile-card__name {
+    font-size: 1.8rem;
+  }
+  .stat-card__time {
+    display: inline-block;
+  }
+  .stat-card__time-grid {
+    grid-template-columns: auto auto;
+    gap: 10px;
+  }
+  .stat-card__previous-time {
+    position: relative;
+    text-align: right;
+    bottom: 40px;
+    right: 20px;
+  }
+  .stat-card__ellipse {
+    left: 88%;
+  }
+}
