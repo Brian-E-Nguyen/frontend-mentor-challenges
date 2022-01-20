@@ -97,6 +97,11 @@ html {
   display: inline-block;
 }
 
+.stat-card__time-grid {
+  display: grid;
+  grid-template-columns: auto;
+}
+
 .stat-card__time {
   font-size: 3rem;
   font-weight: 300;
@@ -201,15 +206,17 @@ html {
   .stat-card__time {
     display: inline-block;
   }
-
+  .stat-card__time-grid {
+    grid-template-columns: auto auto;
+    gap: 10px;
+  }
   .stat-card__previous-time {
-    display: inline-block;
     position: relative;
-    top: 50%;
-    left: 45%;
-    transform: translate(-50%, -50%);
+    text-align: right;
+    bottom: 40px;
+    right: 20px;
   }
   .stat-card__ellipse {
-    left: 85%;
+    left: 88%;
   }
 }
