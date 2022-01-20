@@ -29,6 +29,14 @@ const cardData = [
       'https://github.com/Brian-E-Nguyen/frontend-mentor-challenges/tree/master/Single-Column-Page',
     javascript: true,
   },
+  {
+    title: 'Time-Tracking Dashboard',
+    image: './Time-Tracking-Dashboard/design/desktop-design.jpg',
+    siteSrc: './Time-Tracking-Dashboard/index.html',
+    githubSrc:
+      'https://github.com/Brian-E-Nguyen/frontend-mentor-challenges/tree/master/Time-Tracking-Dashboard',
+    javascript: true,
+  },
 ];
 
 cardData.forEach((data) => {
