@@ -97,6 +97,27 @@ const removeButtonActiveClass = () => {
   }
 };
 
+/**
+ * Generates stat cards when the page is loaded
+ */
+const generateCards = async () => {
+  const data = await retrieveData();
+  for (let i = 0; i < data.length; i++) {
+    let card = document.createElement('div');
+    card.classList.add('stat-card');
+    card.setAttribute('id', data[i].title.toLowerCase());
+    card.innerHTML = `<div class="stat-card__container">
+                          <div>
+                            <h1 class="stat-card__title"></h1>
+                            <img src="/images/icon-ellipsis.svg" class="stat-card__ellipse" alt="">
+                          </div>
+                        <h2 class="stat-card__time"></h2>
+                        <h3 class="stat-card__previous-time"></h3>
+                      </div>`;
+    document.getElementsByClassName('grid-container')[0].appendChild(card);
+  }
+};
+generateCards();
 populateStaticData();
 populateDailyData();
 
