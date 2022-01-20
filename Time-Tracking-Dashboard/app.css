@@ -176,13 +176,14 @@ html {
   color: white;
 }
 
-@media (min-width: 970px) {
+@media (max-width: 970px) {
   .grid-container {
     grid-template-columns: 350px;
   }
   .profile-card {
     grid-row: span 0;
     width: 100%;
+    margin-top: 500px;
   }
   .stat-card {
     width: 100%;
